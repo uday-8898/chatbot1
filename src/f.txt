@@ -1,0 +1,7 @@
+      else if (!preliminaryMessageSent && messages[messages.length - 1]?.sender === 'user' ) {
+        if(messages[messages.length - 1].message=='ok'){
+          console.log(messages[messages.length - 1].message)
+        setPreliminaryMessageSent(true);
+        setShowForm(true);
+        }
+        }

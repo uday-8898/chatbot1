@@ -1,0 +1,143 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.user-form {
+    padding: 10px; /* Reduced padding */
+    position: fixed;
+    z-index: 9999;
+    width: 64.49%; /* Adjusted width */
+    max-width: 400px; /* Smaller max-width */
+    height: 230px; /* Fixed height */
+    border-radius: 20px; /* Reduced border-radius */
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    animation: fadeIn 0.6s ease-out forwards; /* Added fadeIn animation */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    left: 50%;
+    top: 55.96%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+.user {
+    background: #ffffffce;
+    margin-left: -200px;
+    margin-right: -200px;
+    height: 500px;
+    margin-top: -200px;
+}
+
+.form-input {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 7px; /* Reduced padding */
+    margin: 8px 0; /* Reduced margin */
+    border: 1px solid #b5b5b6;
+    border-radius: 8px; /* Reduced border-radius */
+    font-size: 14px; /* Smaller font size */
+    transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+/* .form-input:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 6px rgba(0, 86, 179, 0.3);
+    outline: none;
+    transform: scale(1.02); /* Slight zoom effect */
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      #btn {
+        position: relative;
+        width: 140px;
+        height: 30px;
+        background: #3498db;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        overflow: hidden;
+        /* transition: all 0.3s ease; */
+      }
+      
+      #btn.active {
+        background: #27ae60;
+      }
+      
+      #btnText {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: 4px;
+        position: relative;
+        z-index: 1;
+        transition: all 0.3s ease;
+      }
+      
+      .check-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 150%;
+        height: 150%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: all 0.6s ease;
+      }
+      
+      #btn.active .check-box {
+        transform: translate(-50%, -50%) scale(1);
+      }
+      
+      .check-box svg {
+        width: 25px;
+        height: 25px;
+      }
+      
+      .check-box svg path {
+        stroke: #fff;
+        stroke-width: 4;
+        stroke-linecap: round;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        transition: all 0.6s ease;
+      }
+      
+      #btn.active .check-box svg path {
+        stroke-dashoffset: 0;
+      }
+      
+
+.form-label {
+    display: block;
+    margin-top: 1px; /* Reduced margin */
+    font-size: 14px; /* Smaller font size */
+    color: #000000;
+}
+
+.required::after {
+    content: " *";
+    color: rgb(255, 17, 0);
+    font-weight: bold;
+}
+
+.form-button-container {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    margin-top: 20px; /* Add some space above the button */
+}
+
+
+
+h5 {
+    text-align: center;
+    font-size: 16px; /* Smaller font size */
+    margin-bottom: 15px; /* Reduced margin-bottom */
+    font-weight: bold;
+}

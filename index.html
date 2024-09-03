@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details Form</title>
+    <style>
+        @keyframes borderAnimation {
+            0% {
+                border-color: #007bff;
+                box-shadow: 0 0 10px rgba(0, 123, 255, 0.1);
+            }
+            50% {
+                border-color: #0056b3;
+                box-shadow: 0 0 15px rgba(0, 86, 179, 0.3);
+            }
+            100% {
+                border-color: #007bff;
+                box-shadow: 0 0 10px rgba(0, 123, 255, 0.1);
+            }
+        }
+ 
+        @keyframes moveBackground {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+ 
+       
+ 
+        .form-container {
+            background-color: #fff;
+            padding: 8px;
+            border-radius: 8px;
+            width: 180px;
+            animation: borderAnimation 3s infinite;
+        }
+ 
+        input, button {
+            width: 80%;
+            padding: 8px;
+            height: 7px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+ 
+        label {
+            display: block;
+            margin-top: 0px;
+            font-size: 13px;
+        }
+ 
+        .required::after {
+            content: " *";
+            color: red;
+        }
+ 
+        button {
+            background-color: #3b7fc9;
+            margin-left: 35px;
+            color: white;
+            border-radius: 30px;
+            margin-top: 3px;
+            cursor: pointer;
+            width: 50%;
+            height: 32px;
+        }
+ 
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+ 
+<div class="form-container">
+    <h5>Please Submit your details</h5>
+    <form id="userForm">
+        <label for="name" class="required">Name</label>
+        <input type="text" id="name" name="name" required>
+       
+        <label for="location" class="required">Location</label>
+        <input type="text" id="location" name="location" required>
+       
+        <label for="mobile">Mobile</label>
+        <input type="tel" id="mobile" name="mobile">
+       
+        <button type="submit">Submit</button>
+    </form>
+</div>
+ 
+</body>
+</html>
